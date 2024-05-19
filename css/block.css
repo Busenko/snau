@@ -1,0 +1,297 @@
+.accordion {
+    transform: translateZ(0);
+    background: #F5FFF7;
+    margin-left: 10px;
+	margin-right: 10px;
+}
+
+.accordion p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2d3e50;
+    padding: 10px;
+	
+	  display: flex;
+    align-items: center;
+	
+	
+	
+   
+}
+
+.accordion  p:hover  {
+	color: #00a43c;
+	
+}
+
+.accordion  p img {
+    width: 100%;
+    max-width: 40px;
+    height: auto;
+    transition: transform 0.1s ease;
+}
+
+.accordion  p:hover img {
+    transform: scale(1.1);
+}
+
+
+
+.accordion > .accordion-toggle {
+    display: none;
+    position: absolute;
+    opacity: 0;
+}
+
+.accordion > label {
+    display: block;
+    position: relative;
+    height: 50px;
+    padding: 0 20px;
+    margin-bottom: 2px;
+    border-bottom: 2px solid #00a43c;
+    background-color: #EEFFF1;
+    color: #00a43c;
+    font-size: 18px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.accordion label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.accordion label img {
+    width: 100%;
+    max-width: 40px;
+    height: auto;
+    transition: transform 0.1s ease;
+}
+
+.accordion label:hover img {
+    transform: scale(1.1);
+}
+
+.accordion > label:after {
+    content: '';
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    width: 12px;
+    height: 12px;
+    transform: rotate(-135deg);
+    transition: 0.4s transform;
+}
+
+.accordion > section {
+    overflow: hidden;
+    height: 0;
+    transition: height 0.4s ease; /* Плавний перехід висоти */
+}
+
+.accordion > .accordion-toggle:checked ~ label:after {
+    transform: rotate(45deg);
+    top: 16px;
+}
+
+.accordion > .accordion-toggle:checked ~ section {
+    height: 300px; /* Максимальна висота блоку */
+    overflow-y: auto; /* Вертикальна прокрутка при потребі */
+}
+
+.accordion > .accordion-toggle:checked ~ label img {
+    transform: rotate(180deg);
+}
+
+.accordion > section p {
+    margin: 15px 0;
+    padding: 0 20px;
+}
+
+/* Користувацькі стилі смуги прокрутки */
+.accordion > section::-webkit-scrollbar {
+    width: 8px; /* Ширина смуги прокрутки */
+	
+	cursor: pointer; /* Змінити курсор при наведенні */
+}
+
+.accordion > section::-webkit-scrollbar-thumb {
+    background-color: #00a43c; /* Колір бігунка */
+    border-radius: 10px; /* Заокруглені краї бігунка */
+	
+}
+
+.accordion > section::-webkit-scrollbar-track {
+    background-color: #EEFFF1; /* Колір треку */
+    border-radius: 10px; /* Заокруглені краї треку */
+	
+}
+
+
+
+
+
+
+
+/*//////////////////////////////////////////////////////////*/
+
+
+
+.block_panel{
+	
+
+	
+	width: 80%;
+	
+	display: flex; 
+	flex-direction: column;
+	justify-content: flex-start; 
+	align-items: flex-start; 
+	
+}
+.block_panel img{
+	
+width: 100%;
+	/* Займатиме 100% ширини батьківського контейнера */
+	max-width: 40px;
+	/* Максимальна ширина - 400px */
+	height: auto;
+	/* Автоматична висота, щоб зберігати пропорції */
+	
+	padding: 10px;
+}
+
+
+
+
+.collapsible {
+
+	margin-bottom: 5px;
+	color: #00a43c;
+	font-weight: 800;
+	font-size: 20px;
+	cursor: pointer;
+	padding: 10px;
+
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	background-color: #EEFFF1;
+	box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.5);
+	/* Додає тінь внизу шапки */
+	
+		display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+
+ 
+
+
+.collapsible img {
+    width: 100%;
+    max-width: 60px;
+    height: auto;
+    transition: transform 0.1s ease;
+}
+
+.collapsible:hover img {
+    transform: scale(1.1);
+}
+
+
+.panel {
+	
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s ease-in-out;
+ background-color: #F5FFF7;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.panel p {
+	font-size: 16px;
+	font-weight: 600;
+	color: #2d3e50;
+	padding-bottom: 20px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+
+
+
+.panel p:hover  {
+	color: #00a43c;
+	
+}
+
+.panel p img {
+    width: 100%;
+    max-width: 40px;
+    height: auto;
+    transition: transform 0.1s ease;
+}
+
+.panel p:hover img {
+    transform: scale(1.1);
+}
+
+
+
+@media (max-width: 1100px) {
+	
+	
+	.collapsible {
+
+	
+
+	font-size: 16px;
+
+
+}
+
+	
+	
+	
+	.block_panel{
+	
+
+	
+	width: 95%;
+	
+
+	
+}
+	.collapsible img {
+    width: 100%;
+    max-width: 45px;
+    height: auto;
+    transition: transform 0.1s ease;
+}
+	
+	
+	
+	
+	.accordion > label {
+   
+    font-size: 16px;
+ 
+}
+	
+	
+}
+
