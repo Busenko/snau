@@ -259,6 +259,10 @@ margin-left: 40px;
 	border-radius: 20px;
 	
 }
+@media (max-width: 1100px) {
+
+border-radius: 0px;
+}
 
 .img_container img {
     display: block;
