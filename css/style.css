@@ -229,7 +229,19 @@ margin-left: 40px;
 }
 	
 }
+@media (max-width: 767px) {
+	
 
+.content {
+   
+   margin:  10px 0px;
+	padding-top: 80px;
+   
+}
+
+
+	
+}
 
 
 /* фото 1 блок */

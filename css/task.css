@@ -104,6 +104,17 @@ margin: 10px;
 }
 
 }
+@media (max-width: 767px) {
 
+.task_panel{
+
+    
+	
+	 background: none;
+	box-shadow: none;
+	
+	
+}
+}
 
 
