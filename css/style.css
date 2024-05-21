@@ -104,6 +104,9 @@ background-color: #EEFFF1;
 	
 	overflow-wrap: break-word;
 	overflow: auto;
+	
+	
+/*	text-align: justify;*/
 }
 
 body::-webkit-scrollbar {
@@ -133,15 +136,6 @@ body::-webkit-scrollbar-thumb {
     opacity: 1;
     transform: scale(1);
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -197,8 +191,6 @@ margin-left: 40px;
 	justify-content: flex-start;
 	align-items: center;
 }
-
-
 
 
 
@@ -539,8 +531,11 @@ color: #f4c400;
 .block_logo{
 	display: flex;
 	
-	 background: linear-gradient(to top, rgba(0, 164, 60, 0.2), rgba(0, 164, 60, 0));
-	box-shadow: 0 10px 20px -10px rgba(0, 164, 60, 0.2);
+
+
+
+
+	
 	 
 	justify-content: flex-start;
 	align-items: center;
@@ -660,7 +655,7 @@ width: 100%;
 	height: auto;
 	/* Автоматична висота, щоб зберігати пропорції */
 	
-	padding: 10px;
+	
 }
 
 .block_p p{
@@ -704,7 +699,7 @@ width: 100%;
 	height: auto;
 	/* Автоматична висота, щоб зберігати пропорції */
 	
-	padding: 10px;
+	
 }
 
 .block_p p{
@@ -814,8 +809,8 @@ footer {
 	margin-top: 10px;
 	padding: 10px;
 }
-.block_footer ul li{
-	
+.block_footer ul li {
+ 
 	margin-bottom: 10px;
 
 }
@@ -844,7 +839,6 @@ footer {
 }
 
 
-
 /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 .block_line{
@@ -859,10 +853,6 @@ footer {
 	
 	
 }
-
-
-
-
 
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/

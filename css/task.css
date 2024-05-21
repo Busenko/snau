@@ -37,37 +37,7 @@ margin-left: 40px;
 	align-items: center;
 }
 
-.block_task p{
-	
-	padding-left: 20px;
-	padding-right: 20px;
-	font-size: 16px;
-	font-weight: 600;
-	color: #2d3e50;
-	padding-bottom: 20px;
 
-	display: flex;
-	justify-content: flex-start;
-	align-items: flex-start;
-}
-
-.block_task p:hover  {
-	color: #000;
-	
-}
-
-.block_task img {
-    width: 100%;
-	margin-right: 10px;
-	margin-left: 10px;
-    max-width: 30px;
-    height: auto;
-    transition: transform 0.1s ease;
-}
-
-.block_task p:hover img {
-    transform: scale(1.1);
-}
 
 .block_task h2:hover img {
     transform: scale(1.1);
